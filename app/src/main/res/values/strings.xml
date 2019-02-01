@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">AppiReserva</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tag_bienv_sis">Bienvenido al Sistema</string>
+    <string name="tag_bienvenida">UNIVERSIDAD SANTIAGO DE CALI</string>
+    <string name="desc_imagen">Imagen de inicio</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="tag_profesor">Soy Profesor</string>
+    <string name="tag_usuario">Usuario</string>
+    <string name="tag_clave">Clave</string>
+    <string name="lb_btn_loguin">Entrar</string>
+    <string name="lb_btn_estudiante">Soy Estudiante</string>
+
+    <string name="tag_tl_error_usuario">Error Ingresando Usuario </string>
+    <string name="tag_msj_error_usuario">Usuario o Contraseña Incorrectos</string>
+    <string name="title_activity_reserva">ReservaActivity</string>
+    <string name="tag_tlt_reserva">Solicitud Recurso</string>
+    <string name="tag_tlt_list_reserva">Listado Reserva</string>
+    <string name="tag_tlt_gen_reserva">Generar Reserva</string>
+    <string name="tag_msj_reserva">Confirma generar reserva ?</string>
+    <string name="tag_btn_conf_res">Confirmar</string>
+    <string name="tag_btn_cancl_res">Cancelar</string>
+
+
+    <string name="tag_lb_nombre_profesor">Nombre Profesor</string>
+    <string name="tag_lb_sede">Sede</string>
+    <string name="tag_lb_bloque">Bloque</string>
+    <string name="tag_lb_area">Area</string>
+    <string name="tag_lb_programa">Programa</string>
+    <string name="tag_lb_asignatura">Asignatura</string>
+    <string name="tag_lb_grupo">Grupo</string>
+    <string name="tag_lb_tipo_actividad">Tipo Act.</string>
+    <string name="tag_lb_recurso">Recurso</string>
+    <string name="tag_lb_fecha">Fecha</string>
+    <string name="tag_lb_hora_ini">Hora Inicial</string>
+    <string name="tag_lb_hora_fin">Hora Final</string>
+
+    <string name="tag_hora_ini">I</string>
+    <string name="tag_hora_fin">F</string>
+
+    <string name="tag_lb_btn_fecha">Fecha</string>
+    <string name="tag_lb_btn_hora_ini">Hora Inicio</string>
+    <string name="tag_lb_btn_hora_fin">Hora Fin</string>
+    <string name="tag_lb_btn_guardar">Guardar</string>
+
+    <string name="tag_msj_reserva_ext">"Reserva generada con éxito"</string>
+
+</resources>

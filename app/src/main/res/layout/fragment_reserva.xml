@@ -1,0 +1,341 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutprofesor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_nombre_profesor"
+                    android:id="@+id/textViewLbProfesor"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/textViewProfesor"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutsede"
+                android:layout_below="@+id/layoutprofesor"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_sede"
+                    android:id="@+id/textViewSede"
+                    android:layout_below="@+id/textViewProfesor" />
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerSede"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignLeft="@+id/textViewHoraIni"
+                    android:layout_alignStart="@+id/textViewHoraIni" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutbloque"
+                android:layout_below="@+id/layoutsede"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_bloque"
+                    android:id="@+id/textViewBloque"
+                    android:layout_alignBottom="@+id/spinnerSede" />
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerBloque"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/textViewBloque" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutarea"
+                android:layout_below="@+id/layoutbloque"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_area"
+                    android:id="@+id/textViewArea"
+                    android:layout_alignBottom="@+id/spinnerBloque" />
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerArea"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/textViewArea" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutprograma"
+                android:layout_below="@+id/layoutarea"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_programa"
+                    android:id="@+id/textViewPrograma"
+                    android:layout_alignBottom="@+id/spinnerArea" />
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerPrograma"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/textViewPrograma" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutasignatura"
+                android:layout_below="@+id/layoutprograma"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_asignatura"
+                    android:id="@+id/textViewAsignatura"
+                    android:layout_alignBottom="@+id/spinnerPrograma" />
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerAsignatura"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/textViewAsignatura" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutgrupo"
+                android:layout_below="@+id/layoutasignatura"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_grupo"
+                    android:id="@+id/textViewGrupo"
+                    android:layout_alignBottom="@+id/spinnerAsignatura" />
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerGrupo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/textViewGrupo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutactividad"
+                android:layout_below="@+id/layoutgrupo"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_tipo_actividad"
+                    android:id="@+id/textViewTipoActividad"
+                    android:layout_alignBottom="@+id/spinnerGrupo" />
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerTipoActividad"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/textViewTipoActividad" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutrecurso"
+                android:layout_below="@+id/layoutactividad"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_recurso"
+                    android:id="@+id/textViewRecurso"
+                    android:layout_alignBottom="@+id/spinnerTipoActividad" />
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerRecurso"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignTop="@+id/textViewRecurso" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutfecha"
+                android:layout_below="@+id/layoutrecurso"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_fecha"
+                    android:id="@+id/textViewLbFecha" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/textViewFecha" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tag_lb_btn_fecha"
+                    android:id="@+id/buttonFecha"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/border_button"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layouthora_ini"
+                android:layout_below="@+id/layoutfecha"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_hora_ini"
+                    android:id="@+id/textViewLbHoraIni" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/textViewHoraIni"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tag_lb_btn_hora_ini"
+                    android:id="@+id/buttonHoraIni"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/border_button"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layouthora_fin"
+                android:layout_below="@+id/layouthora_ini"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tag_lb_hora_fin"
+                    android:id="@+id/textViewLbHoraFin"
+                    android:layout_below="@+id/textViewHoraIni" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/textViewHoraFin"
+                    android:layout_below="@+id/textViewLbHoraFin" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tag_lb_btn_hora_fin"
+                    android:id="@+id/buttonHoraFin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/border_button"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutbtn_guardar"
+                android:layout_below="@+id/layouthora_fin"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true">
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tag_lb_btn_guardar"
+                    android:id="@+id/buttonReserva"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/border_button"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
